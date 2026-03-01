@@ -32,7 +32,104 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background: #d9d2c1;
+  font-family: 'Times New Roman', serif;
+}
+
+.newspaper {
+  width: 700px;
+  background: #f4f1e6;
+  padding: 30px;
+  border: 3px solid #000;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.left img {
+  width: 100%;
+  border: 2px solid black;
+  filter: grayscale(100%);
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.footer {
+  border-top: 2px solid black;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.newspaper {
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+
+.left img {
+  filter: grayscale(100%) contrast(120%) sepia(40%);
+}
+
+@media print {
+
+  body {
+    background: white !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #print-area {
+    box-shadow: none !important;
+    border: none !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    margin: 0 auto !important;
+  }
+
+}
+
+* {
+  box-sizing: border-box;
 }
