@@ -14,7 +14,8 @@ export default function NewspaperTemplate({ images = [] }) {
                 justifyContent: "center",
                 padding: "40px",
                 background: "#cfc4ad",
-                fontFamily: "Playfair Display, serif"
+                fontFamily: "Playfair Display, serif",
+                color: "black"
             }}
         >
 
@@ -37,7 +38,8 @@ export default function NewspaperTemplate({ images = [] }) {
                             border: "2px solid black",
                             padding: "10px",
                             width: "220px",
-                            fontSize: "14px"
+                            fontSize: "14px",
+                            color: "black"
                         }}>
                             💌 Kisah Cinta Kita
                             <br />
@@ -48,7 +50,8 @@ export default function NewspaperTemplate({ images = [] }) {
                             fontSize: "48px",
                             fontWeight: "900",
                             letterSpacing: "6px",
-                            margin: 0
+                            margin: 0,
+                            color: "black"
                         }}>
                             LOVE TIMES
                         </h1>
@@ -56,7 +59,8 @@ export default function NewspaperTemplate({ images = [] }) {
                         <div style={{
                             width: "220px",
                             textAlign: "right",
-                            fontSize: "14px"
+                            fontSize: "14px",
+                            color: "black"
                         }}>
                             Edisi Spesial Romantis
                             <br />
@@ -71,17 +75,20 @@ export default function NewspaperTemplate({ images = [] }) {
                     textAlign: "center",
                     borderBottom: "2px solid black",
                     padding: "10px 0",
-                    marginBottom: "40px"
+                    marginBottom: "50px",
+                    color: "black"
                 }}>
                     {today}
                 </div>
 
                 {/* HEADLINE */}
-                <div style={{ textAlign: "center", marginBottom: "30px" }}>
+                <div style={{ textAlign: "center", marginBottom: "50px" }}>
                     <h2 style={{
                         fontSize: "64px",
                         fontWeight: "900",
-                        margin: 0
+                        margin: 0,
+                        color: "black",
+                        marginBottom: "20px"
                     }}>
                         Cinta yang Abadi
                     </h2>
@@ -90,12 +97,13 @@ export default function NewspaperTemplate({ images = [] }) {
                         width: "400px",
                         height: "4px",
                         background: "black",
-                        margin: "20px auto"
+                        margin: "0 auto 30px auto"
                     }}></div>
 
                     <p style={{
                         fontSize: "20px",
-                        fontStyle: "italic"
+                        fontStyle: "italic",
+                        color: "black"
                     }}>
                         “Bersamamu, setiap hari terasa seperti puisi yang hidup.”
                     </p>
@@ -119,7 +127,8 @@ export default function NewspaperTemplate({ images = [] }) {
                         <p style={{
                             marginTop: "20px",
                             lineHeight: "1.8",
-                            textAlign: "justify"
+                            textAlign: "justify",
+                            color: "black"
                         }}>
                             Dalam setiap tatapan dan senyuman, tersimpan cerita tentang
                             dua hati yang dipertemukan oleh takdir. Momen ini bukan hanya
@@ -139,7 +148,8 @@ export default function NewspaperTemplate({ images = [] }) {
                         <h3 style={{
                             fontSize: "24px",
                             fontWeight: "700",
-                            marginBottom: "15px"
+                            marginBottom: "15px",
+                            color: "black"
                         }}>
                             Janji Setia
                         </h3>
@@ -154,7 +164,8 @@ export default function NewspaperTemplate({ images = [] }) {
                         <p style={{
                             marginTop: "15px",
                             lineHeight: "1.8",
-                            textAlign: "justify"
+                            textAlign: "justify",
+                            color: "black"
                         }}>
                             Kita mungkin tidak tahu apa yang akan terjadi esok hari,
                             tetapi selama kita bersama, setiap langkah terasa ringan.
@@ -175,7 +186,8 @@ export default function NewspaperTemplate({ images = [] }) {
                                 lineHeight: "1.6",
                                 display: "flex",
                                 justifyContent: "center",
-                                alignItems: "center"
+                                alignItems: "center",
+                                color: "black"
                             }}
                         >
                             <span style={{ maxWidth: "300px" }}>
@@ -199,7 +211,8 @@ export default function NewspaperTemplate({ images = [] }) {
                         <h3 style={{
                             fontSize: "22px",
                             fontWeight: "700",
-                            marginBottom: "10px"
+                            marginBottom: "10px",
+                            color: "black"
                         }}>
                             Pertemuan Pertama
                         </h3>
@@ -211,7 +224,11 @@ export default function NewspaperTemplate({ images = [] }) {
                             marginBottom: "20px"
                         }}></div>
 
-                        <p style={{ lineHeight: "1.8", marginTop: "10px" }}>
+                        <p style={{
+                            lineHeight: "1.8",
+                            marginTop: "10px",
+                            color: "black"
+                        }}>
                             Dari pertemuan sederhana itu, tak pernah terbayang bahwa
                             percakapan kecil akan berubah menjadi kisah panjang penuh warna.
                         </p>
@@ -221,7 +238,8 @@ export default function NewspaperTemplate({ images = [] }) {
                         <h3 style={{
                             fontSize: "22px",
                             fontWeight: "700",
-                            marginBottom: "10px"
+                            marginBottom: "10px",
+                            color: "black"
                         }}>
                             Masa Depan Bersama
                         </h3>
@@ -232,7 +250,11 @@ export default function NewspaperTemplate({ images = [] }) {
                             marginBottom: "20px"
                         }}></div>
 
-                        <p style={{ lineHeight: "1.8", marginTop: "10px" }}>
+                        <p style={{
+                            lineHeight: "1.8",
+                            marginTop: "10px",
+                            color: "black"
+                        }}>
                             Bersamamu, aku belajar arti sabar, arti memahami,
                             dan arti mencintai dengan tulus.
                         </p>
@@ -246,7 +268,8 @@ export default function NewspaperTemplate({ images = [] }) {
                     borderTop: "4px solid black",
                     paddingTop: "20px",
                     textAlign: "center",
-                    letterSpacing: "4px"
+                    letterSpacing: "4px",
+                    color: "black"
                 }}>
                     LOVE • MEMORY • FOREVER
                 </div>
