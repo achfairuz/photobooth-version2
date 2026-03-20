@@ -28,6 +28,7 @@ export default function Photobooth() {
     const [loading, setLoading] = useState(true);
     const [preview, setPreview] = useState(null);
     const [photos, setPhotos] = useState([]);
+    const [orientation, setOrientation] = useState("portrait");
 
     const maxPhotos = getMaxPhotos(template);
 
@@ -107,8 +108,8 @@ export default function Photobooth() {
                             mirrored={true}
                             videoConstraints={{
                                 facingMode: "user",
-                                width: 1280,
-                                height: 720
+                                width: orientation === "portrait" ? 720 : 1280,
+                                height: orientation === "portrait" ? 1280 : 720
                             }}
                             onUserMedia={() => setLoading(false)}
                             className="w-full"
@@ -123,8 +124,29 @@ export default function Photobooth() {
 
             {/* BUTTON AREA */}
             <div className="mt-6 flex flex-col items-center gap-4">
+                <div className="flex gap-3 mb-2">
+                    <button
+                        onClick={() => setOrientation("portrait")}
+                        className={`px-4 py-2 rounded-full text-sm ${orientation === "portrait"
+                                ? "bg-yellow-400 text-black"
+                                : "bg-gray-700"
+                            }`}
+                    >
+                        📱 Portrait
+                    </button>
 
+                    <button
+                        onClick={() => setOrientation("landscape")}
+                        className={`px-4 py-2 rounded-full text-sm ${orientation === "landscape"
+                                ? "bg-yellow-400 text-black"
+                                : "bg-gray-700"
+                            }`}
+                    >
+                        💻 Landscape
+                    </button>
+                </div>
                 {!preview ? (
+
                     <button
                         onClick={capture}
                         className="bg-yellow-500 px-10 py-4 rounded-full text-black font-bold text-xl hover:scale-105 transition"
