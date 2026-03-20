@@ -10,7 +10,7 @@ export default function ChooseTemplate() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-black via-[#0f172a] to-black text-white flex flex-col items-center justify-center px-4">
+        <div className="min-h-screen bg-gradient-to-br from-black via-[#0f172a] to-black text-white flex flex-col items-center justify-center px-4 py-20">
 
             {/* HEADER */}
             <h1 className="text-3xl sm:text-5xl font-bold mb-10 text-center">

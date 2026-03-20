@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import EidMubarokTemplate from "../components/EidMubarokTemplate";
 import LebaranTemplate from "../components/LebaranTemplate";
 import NewspaperTemplate from "../components/NewspaperTemplate";
+import MemoriesTemplate from "../components/MemoriesTemplate";
 
 // MAX FOTO PER TEMPLATE
 function getMaxPhotos(template) {
@@ -15,6 +16,8 @@ function getMaxPhotos(template) {
             return 1;
         case "eidmubarok":
             return 4;
+        case "memories":
+            return 3;
         default:
             return 1;
     }
@@ -69,6 +72,8 @@ export default function Photobooth() {
             case "newspaper":
                 return <NewspaperTemplate images={allImages} />;
 
+            case "memories":
+                return <MemoriesTemplate images={allImages} />
             default:
                 return null;
         }
@@ -125,25 +130,27 @@ export default function Photobooth() {
             {/* BUTTON AREA */}
             <div className="mt-6 flex flex-col items-center gap-4">
                 <div className="flex gap-3 mb-2">
-                    <button
-                        onClick={() => setOrientation("portrait")}
-                        className={`px-4 py-2 rounded-full text-sm ${orientation === "portrait"
+                    <div className="flex gap-3 mb-2">
+                        <button
+                            onClick={() => setOrientation("portrait")}
+                            className={`px-4 py-2 rounded-full text-sm ${orientation === "portrait"
                                 ? "bg-yellow-400 text-black"
                                 : "bg-gray-700"
-                            }`}
-                    >
-                        📱 Portrait
-                    </button>
+                                }`}
+                        >
+                            💻 Landscape
+                        </button>
 
-                    <button
-                        onClick={() => setOrientation("landscape")}
-                        className={`px-4 py-2 rounded-full text-sm ${orientation === "landscape"
+                        <button
+                            onClick={() => setOrientation("landscape")}
+                            className={`px-4 py-2 rounded-full text-sm ${orientation === "landscape"
                                 ? "bg-yellow-400 text-black"
                                 : "bg-gray-700"
-                            }`}
-                    >
-                        💻 Landscape
-                    </button>
+                                }`}
+                        >
+                            📱 Portrait
+                        </button>
+                    </div>
                 </div>
                 {!preview ? (
 

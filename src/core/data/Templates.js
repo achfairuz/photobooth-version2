@@ -1,4 +1,5 @@
 import templateEidImg from "../../assets/eid-mubarok.png"
+import templateMemories from "../../assets/memories-template.png"
 
 export const templates = [
     {
@@ -27,5 +28,14 @@ export const templates = [
         text: "text-white",
         description: "Template premium dengan nuansa Islami modern",
         preview: templateEidImg,
+    },
+    {
+        key: "memories",
+        name: "Memories – 3 Captured Moments",
+        emoji: "✨",
+        bg: "bg-gradient-to-br from-[#0f3d2e] to-[#1f7a5c]",
+        text: "text-white",
+        description: "Template elegan dan clean",
+        preview: templateMemories,
     },
 ];

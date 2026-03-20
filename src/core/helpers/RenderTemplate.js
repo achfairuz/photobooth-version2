@@ -1,6 +1,7 @@
 import EidMubarokTemplate from "../../components/EidMubarokTemplate";
 import LebaranTemplate from "../../components/LebaranTemplate";
 import NewspaperTemplate from "../../components/NewspaperTemplate";
+import MemoriesTemplate from "../../components/MemoriesTemplate";
 
 export function renderTemplate(template, images) {
     switch (template) {
@@ -12,6 +13,8 @@ export function renderTemplate(template, images) {
 
         case "newspaper":
             return <NewspaperTemplate images={images} />;
+        case "memories":
+            return <MemoriesTemplate images={images} />;
 
         default:
             return <div>Template tidak ditemukan</div>;
