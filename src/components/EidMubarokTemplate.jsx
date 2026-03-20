@@ -13,6 +13,7 @@ export default function EidMubarokTemplate({ images = [] }) {
 
                 {images[0] && (
                     <img
+                        alt="photo-1"
                         src={images[0]}
                         className="absolute top-[45px] left-[20px] w-[400px] h-[215px] object-cover"
                     />
@@ -20,6 +21,7 @@ export default function EidMubarokTemplate({ images = [] }) {
 
                 {images[1] && (
                     <img
+                        alt="photo-2"
                         src={images[1]}
                         className="absolute top-[283px] left-[20px] w-[400px] h-[215px] object-cover"
                     />
@@ -27,6 +29,7 @@ export default function EidMubarokTemplate({ images = [] }) {
 
                 {images[2] && (
                     <img
+                        alt="photo-3"
                         src={images[2]}
                         className="absolute top-[510px] left-[20px] w-[400px] h-[225px] object-cover"
                     />
@@ -34,6 +37,7 @@ export default function EidMubarokTemplate({ images = [] }) {
 
                 {images[3] && (
                     <img
+                        alt="photo-4"
                         src={images[3]}
                         className="absolute top-[755px] left-[20px] w-[400px] h-[220px] object-cover"
                     />
