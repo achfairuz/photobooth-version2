@@ -1,4 +1,4 @@
-export default function NewspaperTemplate({ image }) {
+export default function NewspaperTemplate({ images = [] }) {
 
     const today = new Date().toLocaleDateString("id-ID", {
         weekday: "long",
@@ -108,7 +108,7 @@ export default function NewspaperTemplate({ image }) {
                     <div style={{ flex: 2 }}>
 
                         <img
-                            src={image}
+                            src={images[0]}
                             alt="Captured"
                             style={{
                                 width: "100%",
